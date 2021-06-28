@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="stylesheet" href="node_modules\animate.css\animate.css">
+        <title>Sevensys - Soluções em TI</title>
+    </head>
+    <body>
+        <div id="loader" class="loader">
+            <div class="loader-img flex">
+                <img src="./images/gif-duvida.webp" alt="">
+            </div>
+        </div>
+        <div style="display:none" id="tudo_page">
+            <nav class="navbar navbar-expand-lg  fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand logo-branca" href="index.html">
+                        
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="menu collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                        <ul class="nav navbar-nav justify-content-end">
+                            <li class="nav-item">
+                                <a class="nav-link active link" aria-current="page" href="index.html">Início</a>
+                            </li>
+                            <div class="menu-line"></div>
+                            <li class="nav-item">
+                                <a class="nav-link link" href="quem-somos.html">A Sevensys</a>
+                            </li>
+                            <div class="menu-line"></div>
+                            <li class="nav-item ">
+                                <a class="nav-link link" href="solucoes.html">Soluções</a>
+                                <div class="nav-mobile ">
+                                    <ul>
+                                        <li><a class="" href="alocacoes.html">- Alocação de Profissionais</a></li>
+                                        <li><a class="" href="fabrica.html">- Fábrica de Software e App</a></li>
+                                        <li><a class="" href="projeto.html">- Gerenciamento de Projetos</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nav-desktop">
+                                    <ul>
+                                        <li><a class="dropdown-item" href="alocacoes.html">Alocação de Profissionais</a></li>
+                                        <li><a class="dropdown-item" href="fabrica.html">Fábrica de Software e App</a></li>
+                                        <li><a class="dropdown-item" href="projeto.html">Gerenciamento de Projetos</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <div class="menu-line"></div>
+                            <li class="nav-item">
+                                <a class="nav-link link" href="contato.php">Contato</a>
+                            </li>
+                            <div class="menu-line"></div>
+                            <li class="nav-item">
+                                <a class="nav-link btn btn-oportunidade" href="oportunidades.php">Oportunidades</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner" id="topo">
+                    <div class="carousel-item active carousel-background-1">
+                        <div class="carousel-container flex">
+                            <div class="carousel-cell animate__animated animate__backInLeft">
+                                <a href="alocacoes.html">
+                                    <h2>Alocação de profissional</h2>
+                                    <p>Facilite a contratação de mão de obra especializada!</p>
+                                </a>    
+                            </div> 
+                            <img class="slide-1 animate__animated animate__backInLeft" src="./images/caroussel-alocacao.svg" alt="">
+                        </div>    
+                    </div>
+                    <div class="carousel-item carousel-background-2">
+                        <div class="carousel-container flex">
+                            <div class="carousel-cell">
+                                <a href="oportunidades.php" >
+                                    <h2>Tech Ninja</h2>
+                                    <p>Procuramos entusiatas da tecnologia motivados por soluções digitais. #sejaumtechninja</p>
+                                </a>
+                            </div>
+                            <img class="slide-2" src="./images/caroussel-techninja.svg" alt="" width="100%">
+                        </div>
+                    </div>
+                    <div class="carousel-item carousel-background-3">
+                        <div class="carousel-container flex">
+                            <div class="carousel-cell">
+                                <a href="fabrica.html">
+                                    <h2>Fábrica de Software</h2>
+                                    <p> Desenvolvemos softwares e app’s sob medida para atender as necessidades 
+                                        e regras do seu modelo de negócio!
+                                    </p>
+                                </a> 
+                            </div>            
+                            <img src="./images/caroussel-fabrica.svg" class="slide-3" width="100%" alt="...">
+                        </div>
+                    </div>
+                    <div class="carousel-item carousel-background-4">
+                        <div class="carousel-container flex">
+                            <div class="carousel-cell">
+                                <a href="solucoes.html#transformacao">
+                                    <h2>Transformação Digital</h2>
+                                    <p>Substituímos atividades tradicionais por soluções digitais!</p>
+                                </a>
+                            </div>
+                            <img src="./images/caroussel-transformacao.svg" class="slide-4" width="100%" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <!--Inicio sobre a sevensys-->
+                <div class="sobre-index">
+                    <div class="flex">
+                        <div class="sobre-text">
+                            <div>
+                                <h2 class="title text-center">A SevenSys</h2>
+                            </div>
+                            <div class="sobre-img-mobile">
+                                <img src="./images/index-sevensys.svg" width="100%">
+                            </div>
+                            <p>
+                                Somos uma empresa de soluções tecnológicas, com mais de 15 anos de atuação no mercado.
+                                Nossos Tech Ninjas são nosso maior zelo, pois são os responsáveis pelo sucesso junto aos nossos clientes.
+                                Antes de ofertar uma solução, procuramos entender a real necessidade dos nossos clientes, onde aplicamos as melhores práticas existentes no mercado.
+                                <br>
+                                <br>
+                                Nosso foco principal é conectar "pessoas e tecnologias", para que naturalmente a Transformação Digital aconteça.
+                            </p>
+                            <a href="quem-somos.html" class="btn">Conheça a Sevensys!</a>
+                            
+                        </div>
+                        <div class="sobre-img">
+                            <img src="./images/index-sevensys.svg" width="100%">
+                        </div>
+                    </div>                   
+                </div>
+                <!--Fim sobre a sevensys-->
+                <!--Inicio números sevensys-->
+                <div class="number text-center counter" >
+                    <h2 class="number-title title">Nossos Números</h2>
+                    <div class="row numbers" style="max-width: 1300px; margin: auto;">
+                        <div class="col-5 col-lg-2 number-seven">
+                            <h4 id="seven"><br>+<span class="seven" data-from="1" data-to="4378" data-refresh-interval="100" data-speed="5000"></span></h4><h4 data-bs-toggle="tooltip" data-bs-placement="bottom" title="Nossos seguidores no Linkedin">SevenLovers</h4>
+                        </div>
+                        <div class="col-5 col-lg-2 number-cuca">
+                            <h4 id="cuca"><br>+<span class="cuca" data-from="1" data-to="138" data-refresh-interval="60" data-speed="5000"></span><br></h4><h4 data-bs-toggle="tooltip" data-bs-placement="bottom" title="Cucas que comemos
+                            ">Cucas</h4>
+                        </div>
+                        <div class="col-5 col-lg-2 number-ideia" >
+                            <h4 id="ideia"><br>+<span class="ideia" data-from="1" data-to="300" data-refresh-interval="100" data-speed="5000"></span><br></h4><h4 data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ideias geradas">Ideias</h4>
+                        </div>  
+                                    
+                        <div class="col-5 col-lg-2 number-apito">
+                            <h4 id="apito"><br>+<span class="apito" data-from="1" data-to="176" data-refresh-interval="50" data-speed="5000"></span><br></h4><h4 data-bs-toggle="tooltip" data-bs-placement="bottom" title="Apitamos quando um novo negócio é fechado">Apitos</h4>
+                        </div>
+                        <div class="col-8 col-lg-3 blablabla">
+                            <h4 class="moving"><span class="text-wrapper"><span class="letters">+ Projetos digitais</span></span><br>- papel</h4>
+                        </div>
+                    </div>
+                </div>
+                <!--Fim números sevensys-->
+                <!--Inicio soluções-->         
+                <div class="body-solutions text-center">
+                    <div >
+                        <h2 class="title text-center">Nossas soluções</h2>
+                    </div>
+                    <div class="text-solucoes">
+                        <p>
+                            Nossa atuação é personalizada com soluções digitais capazes de conduzir 
+                            o seu modelo de negócio rumo à <strong>TRANSFORMAÇÃO DIGITAL</strong>.
+                        </p>
+                    </div>
+
+                    <!--Inicio cards-->
+                    <div class="body-flip">
+                        
+                        <div class="row">
+                            <div class="card-flip flip col-10 col-sm-5 col-md-5 col-lg-3">
+                                <div class="front cf-inner" >
+                                    <img src="./images/card-alocacao.svg" class="card-img-top" alt="...">
+                                    <!-- <h1>Alocação de profissionais</h1> -->
+                                </div>    
+                                <div class="back txt-solucoes">
+                                    <h2>Alocação de profissionais</h2>
+                                    <p class="text-p">
+                                        Simplificar a contratação de profissionais na área de tecnologia nunca foi tão fácil!
+                                        Já imaginou reduzir custos e manter uma entrega de qualidade na área de TI? Através da 
+                                        terceirização de profissionais sua empresa elimina as burocracias de contratação e custos 
+                                        elevados de encargos sociais.
+                                    </p>
+                                    <a href="alocacoes.html" class="btn btn-solucoes flip-button">Saiba mais</a>
+                                </div>
+                            </div>
+                            <div class="card-flip flip col-10 col-sm-5 col-md-5 col-lg-3">
+                                <div class="front cf-inner" >
+                                    <img src="./images/card-fabrica.svg" class="card-img-top" alt="...">
+                                    <!-- <h1>Fábrica de software</h1> -->
+                                </div>    
+                                <div class="back txt-solucoes">
+                                    <h2>Fábrica de software</h2>
+                                    <p class="text-p">
+                                        Desenvolvemos sotwares e apps sob medida, respeitamos o modelo de negócio e necessidade 
+                                        do cliente. Nossas equipes utilizam metodologias mundialmente conhecidas e consideradas 
+                                        referência na área de projetos. Prezamos por garantir o escopo aprovado, atender os prazos 
+                                        alinhados, priorizando a qualidade e o alinhamento contínuo.
+                                    </p>
+                                    <a href="fabrica.html" class="btn btn-solucoes flip-button">Saiba mais</a>
+                                </div>
+                            </div>
+                            <div class="card-flip flip col-10 col-sm-5 col-md-5 col-lg-3">
+                                <div class="front cf-inner" >
+                                    <img src="./images/card-projeto.svg" class="card-img-top" alt="...">
+                                    <!-- <h1>Gerenciamento de projetos</h1> -->
+                                </div>    
+                                <div class="back txt-solucoes">
+                                    <h2>Gerenciamento de projetos</h2>
+                                    <p class="text-p">
+                                        Profissionais qualificados para gerenciar projetos em todas as fases: planejamento, 
+                                        execução, controle e encerramento. Isso garante o atendimento de prazo, custo, escopo 
+                                        e qualidade a partir das boas práticas e metodologias ágeis.
+                                    </p>
+                                    <a href="projeto.html" class="btn btn-solucoes flip-button">Saiba mais</a>
+                                </div>
+                            </div>
+
+                            <div class="text-solucoes2 col-12">
+                                <p>
+                                    Vivemos uma constante busca por tecnologias e ferramentas que façam a diferença e sejam 
+                                    competitivas, respeitando sempre os desejos e direcionamentos junto aos <br><strong>NOSSOS CLIENTES</strong>.
+
+                                </p>
+                            </div>
+
+                            <div class="card-flip flip col-10 col-sm-5 col-md-4 col-lg-3">
+                                <div class="front cf-inner" >
+                                    <img src="./images/card-iot.svg" class="card-img-top" alt="...">
+                                    <!-- <h1>Inovação</h1> -->
+                                </div>    
+                                <div class="back txt-solucoes">
+                                    <h2>Inovação</h2>
+                                    <p class="text-p">
+                                        Quando falamos sobre inovação isso vai além do desenvolvimento humano e qualidade de vida. 
+                                        Inovar não é apenas renovar, mas sim ir além do que se espera.
+                                    </p>
+                                    <a href="solucoes.html" class="btn btn-solucoes flip-button">Saiba mais</a>
+                                </div>
+                            </div>
+                            <div class="card-flip flip col-10 col-sm-5 col-md-4 col-lg-3">
+                                <div class="front cf-inner" >
+                                    <img src="./images/card-tecnologia.svg" class="card-img-top" alt="...">
+                                    <!-- <h1>Tecnologia 4.0</h1> -->
+                                </div>    
+                                <div class="back txt-solucoes">
+                                    <h2>Tecnologia 4.0</h2>
+                                    <p class="text-p">
+                                        Atuamos com as mais amplas e diversificadas tecnologias de mercado. Nosso foco é 
+                                        analisar de forma eficaz seu modelo de negócio e aplicar soluções inteligentes.
+                                    </p>
+                                    <a href="solucoes.html" class="btn btn-solucoes flip-button">Saiba mais</a>
+                                </div>
+                            </div>
+                            <div class="card-flip flip col-10 col-sm-5 col-md-4 col-lg-3">
+                                <div class="front cf-inner" >
+                                    <img src="./images/card-transformacao.svg" class="card-img-top" alt="...">
+                                    <!-- <h1>Transformação <br> Digital</h1> -->
+                                </div>    
+                                <div class="back txt-solucoes">
+                                    <h2>Transformação Digital</h2>
+                                    <p class="text-p">
+                                        A SevenSys traz para o mercado soluções com foco em Transformação Digital 
+                                        aplicadas a indústria 4.0. Nossas soluções possibilitam a customização de 
+                                        softwares e soluções já existentes. 
+                                        <br>
+                                        Substituímos atividades tradicionais por soluções digitais.
+                                    </p>
+                                    <a href="solucoes.html" class="btn btn-solucoes flip-button">Saiba mais</a>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                    <!--Fim cards-->
+                </div>
+                <!--Fim soluções-->
+                <!--Inicio segmentos-->
+                <div class="segmentos">
+                    <div class="row">
+                        <h2 class="title text-center">Segmentos</h2>
+                        <div class="text-segmentos-destaque col-10 col-sm-9 col-md-9 col-lg-8">
+                            <p>
+                                Atuamos com toda empresa que busca inovação através de soluções digitais.
+                            </p>
+                        </div>
+                        <div class="col-11 col-sm-10 col-md-10 col-lg-12 segmentos-img">
+                            <img src="./images/index-segmentos.svg" width="100%">
+                        </div>
+                        <div class="text-segmentos col-10 col-sm-9 col-md-9 col-lg-12">
+                            <p>
+                                Nosso compromisso é aplicar soluções de tecnologia de ponta, que proporcionam estabilidade e 
+                                agilidade em nossos processos de melhoria e inovação. Nossos Tech Ninjas oferecem excelentes 
+                                serviços de integração e inovação tecnológica para nossos clientes, que abrange todos os 
+                                segmentos empresariais.
+                            </p>
+                        </div>
+                    </div> 
+                </div>
+                <!--Fim segmentos--> 
+                <!--Inicio sobre tech ninja-->
+                <div class="techninja">
+                    <h2 class="title text-center">Tech Ninja</h2>
+                    <div class="ninja-image-mobile">
+                        <img class="photo-ninja" src="./images/index-techninja.svg">
+                    </div>
+                    <div class="row">
+                        <div class="techninja-text col-11 col-sm-9 col-md-9 col-lg-6" >
+                            <p>
+                            Nosso compromisso visa ultrapassar as barreiras digitais quando aplicado soluções 
+                            tecnológicas, proporcionam estabilidade e agilidade nos processos. 
+                            Nossos Tech Ninjas oferecem excelentes serviços de integração e inovação 
+                            tecnológica para nossos clientes, que abrange todos os segmentos empresariais.  
+                            <br>
+                            <br>
+                            Motivados pelo processo da Transformação Digital, seguimos aprimorando meios de 
+                            usabilidade tecnológica e ferramentas para aumenta a capacidade de implementar 
+                            novos modelos de informatização e gerenciamento das estruturas de negócios, 
+                            que proporcionam agilidade, produtividade e eficácia nos resultados.
+                            
+                            </p>
+                            <a href="oportunidades.php" class="btn">#venhaserumtechninja</a>
+                        </div>
+                        <div class="ninja-image col-11 col-sm-10 col-md-10 col-lg-6">
+                            <img class="photo-ninja" src="./images/index-techninja.svg">
+                        </div>
+                    </div>
+                </div>
+                <!--Fim sobre tech ninja-->
+            </div>
+            <!--Inicio Mapa e rodapé-->
+            <div class="maps-footer">
+                <!--Inicio mapa-->
+                <div class="mapa">
+                    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3557.653263056367!2d-49.0902950853985!3d-26.914497299760157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94df24b08811d8b3%3A0x4aee9f78172b9e70!2sSevenSys%20Solu%C3%A7%C3%B5es%20em%20TI!5e0!3m2!1spt-BR!2sbr!4v1613731790477!5m2!1spt-BR!2sbr" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14230.596219828323!2d-49.0880916!3d-26.9146308!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8028b6d38d50b190!2sIbiza%20Trade%20%26%20Financial%20Center!5e0!3m2!1spt-BR!2sbr!4v1614089722448!5m2!1spt-BR!2sbr" loading="lazy" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+                <!--Fim mapa-->
+                <!--Inicio footer-->
+                <div class="footer">
+                    <div class="row">
+                        <div class="flex logo-footer col-12 col-sm-12 col-md-12 col-lg-3">
+                            <a href="index.php">
+                                <img src="./images/logo.svg" width="100%">
+                            </a>
+                        </div>
+                        <div class="links-footer col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                            <div class="row text-center">
+                                <div>
+                                    <a href="index.php" class="link-footer">Início</a><br>
+                                    <a href="empresa.php" class="link-footer">Quem somos</a><br>
+                                    <a href="solucoes.php" class="link-footer">Soluções</a><br>
+                                    <a href="alocaccoes.php" class="link-footer">Alocação de profissionais</a><br>
+                                    <a href="fabrica.php" class="link-footer">Fábrica de software e app</a><br>
+                                    <a href="projeto.php" class="link-footer">Gerenciamento de projetos</a><br>
+                                    <a href="contato.php" class="link-footer">Contato</a><br>
+                                    <a href="vagas.php" class="link-footer">Oportunidades</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contato-footer col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                            <div class="row text-center">
+                                <div>
+                                    <div class="endereco-footer">
+                                        <h6><span>Endereço: </span></h6>
+                                            <a href="https://goo.gl/maps/roJSToxF1LJvkgeQ9" class="link-footer">Rua Dr. Léo de Carvalho, 74,<br> sala 301, Velha - Blumenau/SC</a>
+                                        </h6>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="telefone-footer">
+                                        <img src="./images/icon-telefone.svg" >(47) 3332-6090
+                                    </div>
+                                    <div class="whatsapp-footer">
+                                        <a href="https://api.whatsapp.com/send/?phone=554796796090&text=Olá+SevenSys%21+Vim+pelo+site%2C+gostaria+de+saber+sobre&app_absent=0" class="link-footer">
+                                            <img src="./images/icon-whatsapp.svg" class="whatsapp-footer"> (47) 99679-6090 - Comercial
+                                        </a>
+                                        <br>
+                                        <a href="https://api.whatsapp.com/send/?phone=554733326090&text=Olá+SevenSys%21+Vim+pelo+site%2C+gostaria+de+saber+sobre&app_absent=0" class="link-footer">
+                                            <img src="./images/icon-whatsapp.svg" class="whatsapp-footer"> (47) 3332-6090 - Administrativo
+                                        </a>
+                                    </div>
+                                    <div class="email-footer">
+                                        <img src="./images/icon-email.svg"> contato@sevensys.tech
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex redes-sociais-footer col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3">
+                            <div>
+                                <p>Siga-nos em nossas redes sociais: </p>
+                                <div class="wrapper">
+                                    <div class="col-social ">
+                                        <a href="https://www.linkedin.com/company/sevensys-ti/">
+                                            <div class="icon linkedin">
+                                                    <div class="tooltip">LinkedIn</div>
+                                                    <span><i class="fab fa-linkedin-in"></i></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-social ">
+                                        <a href="https://www.instagram.com/sevensysti/">
+                                            <div class="icon instagram">
+                                                <div class="tooltip">Instagram</div>
+                                                <span><i class="fab fa-instagram"></i></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-social ">
+                                        <a href="https://www.facebook.com/SevensysTI">
+                                            <div class="icon facebook">
+                                                <div class="tooltip">Facebook</div>
+                                                <span><i class="fab fa-facebook-f"></i></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-social ">
+                                        <a href="https://open.spotify.com/playlist/6g7WUQHussleqAXbTNBWGn">
+                                            <div class="icon spotify">
+                                                <div class="tooltip">Spotify</div>
+                                                <span><i class="fab fa-spotify"></i></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div> 
+                <!--Fim footer-->
+            </div>    
+            <!--Fim mapa e rodapé-->
+            <div class="menu-ninja">
+                <a href="#topo" class="ninja o-icon-ninja"><img src="./images/icon-ninja.svg"></a>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+        
+        <script>
+            
+            $(function() {
+                $(".loader").delay(2000).fadeOut("slow"); //retire o delay quando for copiar!
+                $("#tudo_page").toggle("fast");
+            });
+        </script>
+
+        <script type="text/javascript">
+            function checkScroll() {
+                if ($(window).scrollTop() > 10) {
+                    $('.navbar').addClass("scrolledTop");
+                } else {
+                    $('.navbar').removeClass("scrolledTop");
+                }                
+                if ($(window).scrollTop() > 450) {
+                    $('.navbar').addClass("scrolled");
+                    $(".navbar").addClass("navbar-light");
+                    $(".navbar-brand").removeClass("logo-branca");
+                    $(".navbar-brand").addClass("logo-cor");
+                    $(".navbar").removeClass("navbar-dark");
+                    // console.log("Nav-light");
+                } else {
+                    // document.getElementById("logo").src = "/images/logo-branca.png";
+                    $('.navbar').removeClass("scrolled");
+                    $(".navbar").removeClass("navbar-light");
+                    $(".navbar-brand").removeClass("logo-cor");
+                    $(".navbar-brand").addClass("logo-branca");
+                    $(".navbar").addClass("navbar-dark");
+                    // console.log("Nav-dark");
+                }
+
+                
+            }
+            if ($('.navbar').length > 0) {
+                $(window).on("scroll load resize", function() {
+                    checkScroll();
+                });
+            }   
+        </script>
+
+        <script type="text/javascript">
+            function checkWidth() {
+                if ($(window).width() < 768) {
+                    $('.card-flip').addClass("card");
+                    $('.card-flip').removeClass("flip");
+                    $('.cf-inner').removeClass("front");
+                    $('.txt-solucoes').removeClass("back");
+                    $('.txt-solucoes').addClass("card-body");
+                    $('.text-p').addClass("card-text");
+                    $('.btn-solucoes').removeClass("flip-button");
+                    $('.col-line').addClass("col-8 col-sm-8 col-md-6");
+                    $('.col-end').addClass("col-4 col-sm-6 col-md-6");
+                    $('.wrapper').addClass("row");
+                    $('.col-social').addClass("col-3 col-sm-3 col-md-3");
+                } else {
+                    $('.card-flip').removeClass("card");
+                    $('.card-flip').addClass("flip");
+                    $('.cf-inner').addClass("front");
+                    $('.txt-solucoes').addClass("back");
+                    $('.txt-solucoes').removeClass("card-body");
+                    $('.text-p').removeClass("card-text");
+                    $('.btn-solucoes').addClass("flip-button");
+                    $('.col-line').removeClass("col-8 col-sm-8 col-md-6");
+                    $('.col-end').removeClass("col-4 col-sm-6 col-md-6");
+                    $('.wrapper').removeClass("row");
+                    $('.col-social').removeClass("col-3 col-sm-3 col-md-3");
+                }
+            }
+            if ($('.flip').length > 0) {
+                $(window).on("scroll load resize", function() {
+                    checkWidth();
+                });
+            }   
+        </script>
+
+        <script type="text/javascript">
+            passed = false;
+            $(window).on('scroll', function() {
+                if (!passed) {
+                    if ($(window).scrollTop() >= $('.counter').offset().top - window.innerHeight) {
+                        var textWrapper = document.querySelector('.moving .letters');
+                        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+                        anime.timeline({ loop: true })
+                            .add({
+                            targets: '.moving .letter',
+                            scale: [0, 1],
+                            duration: 5000,
+                            elasticity: 900,
+                            delay: (el, i) => 45 * (i + 1)
+                            });
+                        passed = true;
+                    }
+                    counter(cuca).then(function(_elem) {})
+                    counter(ideia).then(function(_elem) {})
+                    counter(seven).then(function(_elem) {})
+                    counter(apito).then(function(_elem) {})
+                }
+            });
+                
+            $.fx.interval = 0;
+            var cuca = $(".cuca");
+            var ideia = $(".ideia");
+            var seven = $(".seven");
+            var apito = $(".apito");
+        
+            function counter(elem) {
+        
+                return $({
+                    from: elem.data().from
+                }).animate({
+                from: elem.data().to
+                }, {
+                easing:"linear",
+                duration: elem.data().speed,
+                step: function(now, fx) {    
+                elem
+                .text(Math.floor(now))
+                }
+                }).promise().then(function() {
+                    return elem
+                })
+            }
+        </script>
+
+        <script type="text/javascript">
+            function checkWidth() {
+
+                if ($(window).scrollTop() > 3000) {
+                    $('.ninja').show();
+                    $('.o-ninja-menu').hide();
+                    $('.photo-ninja').addClass("animate__animated animate__tada");
+                } else {
+                    $('.ninja').hide();
+                    $('.o-ninja-menu').show();
+                }
+            }
+            if ($('.menu-ninja').length > 0) {
+                $(window).on("scroll load resize", function() {
+                    checkWidth();
+                });
+            }   
+        </script>
+    </body>
+</html>

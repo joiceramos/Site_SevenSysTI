@@ -1,0 +1,189 @@
+.cores-paleta {
+    color: #3894e9;
+    color: #4469f5;
+    color: #33dfad;
+    color: #3bc9bd;
+    color: #d634e9;
+    color: #b042e1;
+}
+
+
+
+
+.o-recruitment {
+    width: 1140px;
+    margin: 2em 0 0 -0.9em;
+    border: 1px solid red;
+}
+
+.o-recruitment h4 {
+    margin-bottom: 2em;
+    /* font-size: 1.5em; */
+}
+
+.o-recruitment h3 {
+    margin-top: 2em;
+    text-align: center;
+}
+
+.o-recruitment h5{
+    width: 1.4em;
+    height: 1.4em;
+    font-size: 1.5em;
+    text-align: center;
+    border: 3px solid #7c007b;
+    color: #7c007b;
+    float: left;
+}
+
+.o-cadastro, 
+.o-contato,
+.o-selecao,
+.o-retorno,
+.o-aprovado {
+    width: 17em;
+    height: auto;
+    margin-top: 1em;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur( 6.0px );
+    -webkit-backdrop-filter: blur( 6.0px );
+    border-radius: 10px;
+    border-left: 1px solid rgba(255, 255, 255, 0.15);
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 1em;
+}
+
+.o-cadastro img, 
+.o-contato img,
+.o-selecao img,
+.o-retorno img,
+.o-aprovado img {
+    width: 6em;
+    margin: 1em 0 1em -2em;
+}
+
+.o-cadastro h4, 
+.o-contato h4,
+.o-selecao h4,
+.o-retorno h4,
+.o-aprovado h4 {
+    margin-bottom: 0.5em;
+    color: #FFF;
+}
+
+.o-cadastro p, 
+.o-contato p,
+.o-selecao p,
+.o-retorno p,
+.o-aprovado p {
+    color: #FFF;
+}
+
+.o-cadastro {
+    margin: -15em 0 0 -2em ;
+}
+
+.o-contato {
+    margin: 15em 0 0 -16em ;
+}
+
+.o-selecao {
+    margin: 0 0 0 -16em ;
+}
+
+.o-retorno {
+    margin: -44em -1em 0 -6em;
+}
+
+.o-aprovado {
+    margin: 13em -1em 0 19em ;
+}
+
+.o-traco {
+    width: 35em;
+    margin: -23em 0 0 -5em;
+}
+
+.o-traco2 {
+    width: 32em;
+    margin: -36em 0 0 -33em;
+}
+
+.o-traco3 {
+    width: 24em;
+    margin: -2em 0 0 -47em;
+}
+
+.o-traco4 {
+    width: 17em;
+    margin: -24em 0 0 -19em;
+}
+
+
+<div class="o-recruitment">
+                <h3 class="text-center text-light" id="recrutamento">Saiba como realizar a sua conexão:</h3>
+                <div class="flex">
+                    <div class="o-cadastro">                            
+                        <h5>1</h5>
+                        <img src="./images/assets/icon-curriculo.svg">
+                        <h4>Cadastro</h4>
+                        <p>
+                            Confira nossas oportunidades e os pré-requisitos para realizar sua conexão.
+                        </p>
+                    </div>
+                    <div class="o-traco">
+                        <img src="./images/assets/traco1.svg" alt="">
+                    </div>
+                    <div class="o-contato">
+                        <h5>2</h5>
+                        <img src="./images/assets/icon-contato.svg">
+                        <h4>Contato</h4>
+                        <p>
+                            Se seu perfil for selecionado, entraremos em contato para dar sequência ao 
+                            processo de seleção. Caso não atenda aos requisitos seu cadastro permanecerá 
+                            conosco para futuras oportunidades.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex">
+                    
+                    <div class="o-selecao">
+                        <h5>3</h5>
+                        <img src="./images/assets/icon-selecao.svg">
+                        <h4>Seleção</h4>
+                        <p>
+                            Obaaa... se você chegou até aqui você chamou nossa atenção!! A partir de agora você passará 
+                            por algumas etapas da nossa seleção. Prepare-se!!!
+                        </p>
+                    </div>
+                    <div class="o-traco2">
+                        <img src="./images/assets/traco2.svg" alt="" >
+                    </div>
+                    <div class="o-traco3">
+                        <img src="./images/assets/traco3.svg" alt="">
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="o-aprovado">
+                        <h5>5</h5>
+                        <img src="./images/assets/icon-aprovado.svg">
+                        <h4>Aprovado</h4>
+                        <p>
+                            Uhuuu... chegamos na reta final e estamos felizes em nosso time de Tech Ninjas.
+                        </p>
+                    </div>
+                    <div class="o-traco4">
+                        <img src="./images/assets/traco4.svg" alt="">
+                    </div>
+                    <div class="o-retorno">
+                        <h5>4</h5>
+                        <img src="./images/assets/icon-retorno.svg">
+                        <h4>Retorno</h4>
+                        <p>
+                            Você receberá um retorno do nosso time, aguarde.
+                        </p>
+                    </div>
+                </div>
+                <h3 class="text-light" id="vagas">Cadastre-se, faça parte do nosso time!!</h3>
+            </div>
